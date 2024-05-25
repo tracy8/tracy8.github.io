@@ -1,0 +1,632 @@
+@font-face {
+  font-family: "SourceSansPro-Regular";
+  src: url("./font/SourceSansPro-Regular.otf") format("opentype");
+  font-style: normal;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "SourceSansPro-Regular";
+  font-style: normal;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  flex: auto;
+  background-image: url("./images/banner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 2% 5% 2% 5%;
+  filter: grayscale(100%);
+  position: absolute;
+  left: -0.025%;
+  right: -0.025%;
+  top: 0%;
+  justify-content: space-between;
+  bottom: -26.48%;
+  height: 100vh;
+}
+
+.nav-links {
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.nav-links > a {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  color: #ffffff;
+  padding-right: 53px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.banner {
+  left: 20%;
+  right: 20%;
+  display: flex;
+  flex-direction: column;
+  background: radial-gradient(
+    85.9% 55.9% at 50% 14.1%,
+    rgba(41, 48, 61, 0.0001) 0%,
+    #071629 100%
+  );
+  color: white;
+}
+
+.banner__learn {
+  display: flex;
+  flex-direction: column;
+  padding-top: 5rem;
+}
+
+.banner__learn > h1 {
+  height: 151px;
+  font-weight: 700;
+  font-size: 120px;
+  line-height: 151px;
+  text-align: center;
+  color: #ffffff;
+  z-index: 20;
+}
+
+.banner__learn > p {
+  height: 20px;
+  position: relative;
+  margin-top: -5%;
+  text-align: center;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-around;
+  margin-left: 38%;
+  margin-right: 38%;
+}
+
+.banner__learn > button,
+.membership button {
+  background: #c271ff;
+  border-radius: 25px;
+  border: none;
+  padding: 0.7rem;
+  color: white;
+  font-weight: 500;
+  box-shadow: 0px 1px 20px rgba(0, 0, 0, 0.5);
+  position: relative;
+  align-self: center;
+  margin: 2rem;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.dcolor {
+  color: #c271ff;
+}
+
+.banner__courses {
+  padding: 1%;
+  display: flex;
+  flex-direction: column;
+  z-index: 20;
+}
+
+.banner__courses > h2 {
+  align-self: center;
+  padding: 2rem;
+  font-weight: 300;
+  line-height: 40px;
+}
+
+.banner__courses .dcolor {
+  font-weight: 700;
+}
+
+.banner__courses__cards__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.banner__courses__card {
+  width: 20%;
+  margin-bottom: 7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner__courses__card > img {
+  border-radius: 50%;
+  max-width: 80%;
+}
+
+.banner__courses__card > h3 {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 27px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.banner__courses__card > p {
+  height: 48px;
+  font-family: "Source Sans Pro";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #ffffff;
+}
+
+main {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+.quotes {
+  padding: 100px;
+  background-color: #c271ff;
+}
+
+.quotes__inner {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.quotes__inner img {
+  height: 160px;
+  width: 160px;
+}
+
+.quotes__inner > div {
+  margin-left: 50px;
+  color: white;
+}
+
+.quotes__inner blockquote {
+  max-width: 700px;
+  font-size: 18px;
+  margin-left: 0;
+}
+
+.quotes__inner .names {
+  font-weight: 700;
+  font-size: 22px;
+  margin-bottom: 0;
+}
+
+.quotes__inner .presenter {
+  font-style: italic;
+}
+
+.videos {
+  background-color: white;
+  padding: 40px;
+}
+
+.videos > h1 {
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+  color: #071629;
+}
+
+.videos__inner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 40px;
+  max-width: 90%;
+  margin: auto;
+}
+
+.videos__inner > div {
+  max-width: 255px;
+}
+
+.videos__inner .preview {
+  position: relative;
+}
+
+.videos__inner > div > .preview img.preview__image {
+  width: 100%;
+  height: 154px;
+  border-radius: 5px 5px 0px 0px;
+  margin-bottom: 10px;
+  object-fit: cover;
+}
+
+.videos__inner > div > .preview img.play__button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 65px;
+  width: 65px;
+  cursor: pointer;
+}
+
+.videos__inner > div > h2 {
+  margin-top: 10px;
+}
+
+.videos__inner > div > p {
+  color: #07162980;
+  font-size: 14px;
+}
+
+.videos__inner .profile {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.videos__inner .profile img {
+  height: 30px;
+  width: 30px;
+  border-radius: 100%;
+}
+
+.videos__inner .profile h3 {
+  margin-left: 10px;
+  color: #c271ff;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.videos__inner .ratings {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.videos__inner .ratings > div {
+  display: flex;
+  flex-direction: row;
+}
+
+.videos__inner .ratings > div img {
+  margin-right: 5px;
+  height: 15px;
+  width: 15px;
+}
+
+.videos__inner .ratings > p {
+  color: #c271ff;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.membership {
+  background-color: #071629;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.membership > h1 {
+  color: white;
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.membership > h1 > span {
+  color: #c271ff;
+}
+
+.membership .row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 60px;
+}
+
+.membership .row > div {
+  max-width: 220px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.membership .row > div > h2 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 0;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.membership .row > div > p {
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 0;
+  text-align: center;
+}
+
+.faq {
+  background-color: white;
+  padding: 40px;
+}
+
+.faq > h1 {
+  font-size: 30px;
+  font-weight: 100;
+  text-align: center;
+  color: #071629;
+}
+
+.faq__inner > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 40px;
+  max-width: 70%;
+  margin: auto;
+}
+
+.faq__inner > div > div {
+  max-width: 350px;
+}
+
+.faq__inner > div > div > h2 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 0;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.faq__inner > div > div > p {
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 0;
+  text-align: left;
+  color: #07162980;
+}
+
+footer {
+  background-color: #071629;
+  padding: 20px;
+}
+
+.footer__inner > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 70%;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.footer__inner > div > div {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer__inner > div > div a {
+  margin-left: 20px;
+}
+
+.footer__inner > p {
+  text-align: center;
+  font-size: 12px;
+  color: white;
+}
+
+/* make the homepage responsive on mobile screens */
+
+@media only screen and (max-width: 600px) {
+  header {
+    background-size: 100% 100%;
+    padding: 2% 5% 2% 5%;
+  }
+
+  .banner {
+    left: 0;
+    right: 0;
+    margin-bottom: 0;
+  }
+
+  .banner__learn > h1 {
+    font-size: 60px;
+    line-height: 75px;
+  }
+
+  .banner__learn > p {
+    font-size: 12px;
+    line-height: 15px;
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+
+  .banner__courses > h2 {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .banner__courses__card {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .banner__courses__card > h3 {
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  .banner__courses__card > p {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .quotes {
+    padding: 40px;
+  }
+
+  .quotes__inner img {
+    height: 80px;
+    width: 80px;
+  }
+
+  .quotes__inner > div {
+    margin-left: 20px;
+  }
+
+  .quotes__inner blockquote {
+    font-size: 14px;
+  }
+
+  .quotes__inner .names {
+    font-size: 16px;
+  }
+
+  .quotes__inner .presenter {
+    font-size: 14px;
+  }
+
+  .videos {
+    padding: 20px;
+  }
+
+  .videos > h1 {
+    font-size: 20px;
+  }
+
+  .videos__inner {
+    flex-direction: column;
+  }
+
+  .videos__inner > div {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .videos__inner > div > .preview img.preview__image {
+    height: 100px;
+  }
+
+  .videos__inner > div > .preview img.play__button {
+    height: 40px;
+    width: 40px;
+  }
+
+  .videos__inner > div > h2 {
+    font-size: 16px;
+  }
+
+  .videos__inner > div > p {
+    font-size: 12px;
+  }
+
+  .videos__inner .profile img {
+    height: 20px;
+    width: 20px;
+  }
+
+  .videos__inner .profile h3 {
+    font-size: 12px;
+  }
+
+  .videos__inner .ratings > div img {
+    height: 10px;
+    width: 10px;
+  }
+
+  .videos__inner .ratings > p {
+    font-size: 12px;
+  }
+
+  .membership {
+    padding: 20px;
+  }
+
+  .membership > h1 {
+    font-size: 20px;
+  }
+
+  .membership .row {
+    flex-direction: column;
+    padding-top: 40px;
+  }
+
+  .membership .row > div {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .membership .row > div > h2 {
+    font-size: 16px;
+  }
+
+  .membership .row > div > p {
+    font-size: 12px;
+  }
+
+  .faq {
+    padding: 20px;
+  }
+
+  .faq > h1 {
+    font-size: 20px;
+  }
+
+  .faq__inner > div {
+    flex-direction: column;
+  }
+
+  .faq__inner > div > div {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .faq__inner > div > div > h2 {
+    font-size: 16px;
+  }
+
+  .faq__inner > div > div > p {
+    font-size: 12px;
+  }
+
+  footer {
+    padding: 10px;
+  }
+
+  .footer__inner > div {
+    flex-direction: column;
+  }
+
+  .footer__inner > div > div {
+    margin: 20px auto;
+  }
+
+  .footer__inner > p {
+    font-size: 10px;
+  }
+
+  .nav-links > a {
+    padding-right: 20px;
+  }
+
+  .banner__learn > button,
+  .membership button {
+    padding: 0.5rem;
+    margin: 1rem;
+  }
+}
